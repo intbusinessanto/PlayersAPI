@@ -1,5 +1,4 @@
-from rest_framework import viewsets
-from rest_framework import generics
+from rest_framework import viewsets, generics
 from .serializer import PlayerSerializer
 from .models import Player
 import requests
