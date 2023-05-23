@@ -1,0 +1,64 @@
+<form [formGroup]="nbaForm">
+
+<mat-form-field>
+  <mat-label>First Name</mat-label>
+  <input formControlName="first_name" matInput placeholder="First Name" name="first_name">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Last Name</mat-label>
+  <input formControlName="last_name" matInput placeholder="Last Name" name="last_name">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Position</mat-label>
+  <input formControlName="position" matInput placeholder="Position" name="name">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Height Feet</mat-label>
+  <input formControlName="height_feet" matInput placeholder="Height feet" name="name">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Height Inches</mat-label>
+  <input formControlName="height_inches" matInput placeholder="Name" name="name">
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Weight Pounds</mat-label>
+  <input formControlName="weight_pounds" matInput placeholder="Name" name="name">
+</mat-form-field>
+
+
+  <h3>Team</h3>
+
+    <ng-container formGroupName="team">
+      <mat-form-field>
+        <mat-label>Team</mat-label>
+        <input formControlName="abbreviation" matInput placeholder="abbreviation" name="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Conference</mat-label>
+        <input formControlName="conference" matInput placeholder="Conference" name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Division</mat-label>
+        <input formControlName="division" matInput placeholder="Division" name="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>City</mat-label>
+        <input formControlName="city" matInput placeholder="City" name="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input formControlName="full_name" matInput placeholder="Full Name" name="name">
+      </mat-form-field>
+    </ng-container>
+
+
+    <button mat-raised-button color="primary" (click)="update()">Update</button>
+
+</form>
